@@ -1,8 +1,8 @@
 use std::io::{self, Write, BufWriter};
 
-use super::{MatchWithPositions, match_and_score_with_positions};
-use ansi::{clear, color, cursor, style};
-use terminal::{self, Terminal, Key, Event};
+use rff::{MatchWithPositions, match_and_score_with_positions};
+use crate::ansi::{clear, color, cursor, style};
+use crate::terminal::{self, Terminal, Key, Event};
 
 use rayon::prelude::*;
 

@@ -1,10 +1,11 @@
-extern crate rff;
-extern crate clap;
-extern crate rayon;
+mod ansi;
+mod interface;
+mod stdin;
+mod terminal;
 
 use std::io::{self, Write, BufWriter};
-use rff::{stdin, match_and_score};
-use rff::interface::{Interface, Error};
+use rff::match_and_score;
+use interface::{Interface, Error};
 use clap::{App, Arg};
 use rayon::prelude::*;
 

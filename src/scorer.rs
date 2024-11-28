@@ -3,9 +3,9 @@
 // Licensed under the MIT license
 // https://github.com/jhawthorn/fzy
 
-use consts::*;
-use matcher::eq;
-use matrix::Matrix;
+use crate::consts::*;
+use crate::matcher::eq;
+use crate::matrix::Matrix;
 
 pub fn score(needle: &str, haystack: &str) -> f64 {
     let needle_length = needle.chars().count();

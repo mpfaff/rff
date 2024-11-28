@@ -1,15 +1,8 @@
-extern crate libc;
-extern crate rayon;
-
 mod consts;
-mod terminal;
 
-pub mod ansi;
-pub mod stdin;
 pub mod matcher;
 pub mod matrix;
 pub mod scorer;
-pub mod interface;
 
 pub type Match<'a> = (&'a str, f64);
 pub type MatchWithPositions<'a> = (&'a str, f64, Vec<usize>);
